@@ -1,0 +1,15 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: "@plusnew/driver-dom"
+    versions:
+    - 1.4.0
+  - dependency-name: typescript
+    versions:
+    - 3.9.8
+    - 3.9.9
